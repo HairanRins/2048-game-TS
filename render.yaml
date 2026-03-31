@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: 2048-game
+    env: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npx http-server public -p 10000 -c-1
+    publishPath: public
+    branch: main
+    envVars:
+      - key: NODE_ENV
+        value: production
