@@ -38,7 +38,7 @@ p, h2 {
     margin-top: 20px;
 }
 
-.grid div {
+.tile {
     width: 100px;
     height: 100px;
     margin: 7px;
@@ -49,6 +49,12 @@ p, h2 {
     text-align: center;
     font-size: 60px;
     line-height: 1.6;
+    transition: all 0.15s ease-in-out;
+}
+
+.tile.empty {
+    background-color: #afa192;
+    color: transparent;
 }
 
 .score-container {
@@ -68,3 +74,9 @@ p, h2 {
     font-size: 16px;
 }
 
+#result {
+    font-size: 18px;
+    color: #776e65;
+    margin-bottom: 10px;
+    text-align: center;
+}
